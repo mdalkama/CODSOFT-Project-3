@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+
+}
+.calculator{
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding: 10px;
+    height: 400px;
+    width: 250px;
+    z-index: 99;
+}
+.calculator:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.row input{
+    width: 220px;
+    height: 60px;
+    background-color: black;
+    text-align: left;
+    color: white;
+    border: none;
+    font-size: 50px;
+    text-align: right}
+
+.row input::placeholder{
+    color: white;
+    font-weight: 300;
+
+
+}
+
+.btn{
+    background-color: rgb(51, 51, 51);
+    border-radius: 50%;
+    color: white;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border: none;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ffffff74;
+    box-shadow: 0px 0px 5px white;
+    border: 1px solid white;
+}
+.btn-orng{
+    background-color: #FD9505;
+    font-size: 30px;
+}
+.btn-orng:hover{
+    background-color: #fab95cab;
+}
+.btn-wht{
+    background-color: #A5A5A5;
+    color: black;
+}
+.btn-zero{
+    text-align: left;
+    padding-left: 20px;
+    width: 108px;
+    border-radius: 50px;
+}
+.hello{
+    background-color: yellow;
+    color: red;
+}
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(40,1fr);
+    grid-template-row: repeat(30,1fr);
+    background: rgba(255, 255, 255, 0);
+    filter: saturate(2);
+    overflow: hidden;
+
+}
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 1s ease;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+.colorBox:hover{
+    z-index: 5;
+    background-color: #FD9505;
+    transition-duration: 0s;
+    box-shadow: 0px 0px 10px #FD9505;
+}
